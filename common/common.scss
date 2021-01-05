@@ -1,0 +1,286 @@
+@import 'variables';
+
+body {
+  background: url($bg);
+  background-attachment: fixed;
+}
+
+// Header
+// *------------------------------------------------*
+.d-header {
+  background: $gradient-red;
+  border-radius: 0 0 $layout-border-radius $layout-border-radius;
+  height: 15%;
+  img.avatar {
+    border-radius: 20px;
+  }
+  .d-header-icons {
+    .d-icon {
+      color: $header-primary;
+      font-size: 22px;
+    }
+    .header-dropdown-toggle {
+      margin-left: 1rem;
+    }
+  }
+  #site-logo {
+   filter: invert(get_invert($logo-invert-colors)) hue-rotate(#{$logo-hue-rotation}deg) brightness(calc((#{$logo-brightness} / 10) + 1));
+  }
+}
+
+// Dropdowns
+// *------------------------------------------------*
+.menu-panel {
+  background-color: $color-mud;
+  margin-top: 0.60em;
+  border: 1px solid $tertiary;
+  border-radius: $layout-border-radius;
+}
+
+// Buttons
+// *------------------------------------------------*
+.nav-pills>li>a {
+  font-size: inherit;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: $layout-border-radius;
+  padding: 6px 12px;
+  &:hover {
+    color: $color-mud;
+    background-color: $tertiary;
+  }
+}
+
+#create-topic {
+  background-color: $tertiary;
+  color: $color-white;
+  border-radius: $layout-border-radius;
+  .fa {
+    color: $color-white;
+  }
+
+  &:hover {
+    background: $color-blue;
+    color: $color-white;
+    border-radius: $layout-border-radius;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+.btn {
+  border-radius: $layout-border-radius;
+}
+
+// Topic List
+// *------------------------------------------------*
+tbody {
+  border-top: 3px solid $tertiary;
+  tr.topic-list-item {
+    border-bottom: 1px solid $tertiary-low;
+  }
+}
+
+.admin-main-nav,
+.admin-controls,
+.user-primary-navigation,
+.list-controls {
+  background: $color-mud;
+  border-radius: 10px 10px 0 0;
+  padding: 1em 1em 0.5em 1em;
+  width: auto;
+  .select-kit.combo-box .combo-box-header > .d-icon {
+    color: $color-black;
+  }
+  margin-bottom: 0;
+}
+
+.modal-header {
+  background: $tertiary;
+  color: $color-white;
+}
+
+#list-area {
+  border: 2px solid $color-mud;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 0 0 $color-mud;
+  border-top: none;
+  background: $secondary;
+  margin-bottom: 0;
+}
+
+#topic-title .title-wrapper {
+  padding: 1em;
+  background: $color-mud;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.combo-box-header {
+  border-radius: $layout-border-radius;
+}
+
+.container.posts {
+  box-shadow: 0 5px 0 0 #ccc1a7;
+  border-top: none;
+  background: $color-mud;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+#topic-title {
+  margin-bottom: 0;
+}
+
+.badge, .viewing-self, .show-badge, .body-page, .user-main {
+  background-color: $color-mud;
+  padding: 1em;
+}
+
+.contents {
+  padding: 1em;
+}
+
+// Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $tertiary;
+    border-radius: 10px 10px 0 0;
+    color: $color-white;
+  }
+  .search-advanced-filters {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.search-container .search-advanced {
+  background-color: $color-mud;
+  padding: 1em;
+}
+
+// Footer
+// *------------------------------------------------*
+#topic-footer-buttons {
+  max-width: calc(1050px + (11px * 2) + 45px);
+  background: $color-mud;
+  padding: 1em;
+}
+
+.suggested-topics-wrapper {
+  background: $color-mud;
+  padding: 1em;
+}
+
+.footer-message {
+  padding-left: 1em;
+}
+
+// Topic
+// *------------------------------------------------*
+blockquote,
+aside.onebox,
+aside.quote blockquote,
+aside.quote .title {
+  border-color: #f7bec2;
+}
+
+.small-action, .topic-body, .small-action .small-action-desc, .gap, .topic-status-info {
+  border-color: $tertiary-low;
+}
+
+.user-content {
+  padding: 1em;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header {
+  padding-left: 0.5em;
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  background: $tertiary-low;
+
+  nav:before, nav:after, .controls, .nav-pills {
+    background: $tertiary-low;
+  }
+  .nav-pills>li a.active {
+    background: none;
+    color: $tertiary;
+  }
+}
+
+.discourse-no-touch .admin-controls button:hover,
+ .discourse-no-touch .admin-controls button.btn-hover,
+ .discourse-no-touch .admin-controls label.btn:hover,
+ .discourse-no-touch .admin-controls label.btn.btn-hover {
+  background: $tertiary-hover;
+  color: $color-white;
+}
+
+.full-width {
+  background: $color-mud;
+}
+
+.admin-reports.admin-contents, .dashboard.admin-contents, .dashboard-next.admin-contents {
+  margin: 10px 0 0 10px;
+}
+
+.admin-container {
+  padding: 1em;
+}
+
+//  Mario Spinner
+// *------------------------------------------------*
+.custom-loader-container {
+  position: relative;
+  margin: 20px 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.svg-mario {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+  color: $tertiary;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "discourse-mario-theme",
+  "license_url": null,
+  "about_url": null,
+  "authors": "Meghna",
+  "assets": {
+    "bg": "assets/background_mario.png"
+  },
+  "color_schemes": {
+    "mario": {
+      "primary": "000000",
+      "secondary": "F7FCFF",
+      "tertiary": "E70213",
+      "quaternary": "E70213",
+      "header_background": "000000",
+      "header_primary": "fcca46",
+      "highlight": "fcca46",
+      "danger": "e74762",
+      "success": "377B01",
+      "love": "E50012"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

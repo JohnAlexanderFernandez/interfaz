@@ -1,0 +1,21 @@
+// Variables
+// *------------------------------------------------*
+$color-white: #ffffff;
+$color-black: #000000;
+$color-mud: #FAF5E8;
+$color-blue: #318CE7;
+$layout-border-radius: 20px;
+$gradient-red: repeating-linear-gradient(-45deg,#f00c0c, #f00c0c 6px, #f13232, #f13232 12px);
+
+// Functions
+// *------------------------------------------------*
+@function get_invert($invert){
+  @if $invert == "true"{
+    @return 1
+  }
+  @return 0
+}
+
+@function get_brightness($amount){
+  @return unquote($amount)
+}
