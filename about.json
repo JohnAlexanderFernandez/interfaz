@@ -1,7 +1,7 @@
 {
   "name": "discourse-mario-theme",
-  "license_url": null,
-  "about_url": null,
+  "license_url": "https://github.com/MeghnaAJ/discourse-mario-theme/blob/master/LICENSE",
+  "about_url": "https://meta.discourse.org/t/mario-inspired-theme-for-discourse/175252",
   "authors": "Meghna",
   "assets": {
     "bg": "assets/background_mario.png"
